@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWelcomeBackground">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/welcome2" />
+
+
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="top"
+        android:text="@string/choose_your_gender"
+        android:textAlignment="center"
+        android:textAppearance="@style/WelcomeHeadText" />
+
+    <ImageView
+        android:id="@+id/man"
+        android:layout_width="128dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/hello"
+        android:layout_alignStart="@+id/hello"
+        android:layout_marginStart="-25dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/man" />
+
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/man"
+        android:layout_alignStart="@+id/man"
+        android:layout_alignEnd="@+id/man"
+        android:text="@string/male"
+        android:textAlignment="center"
+        android:textAppearance="@style/WelcomeHeadTextLess" />
+
+
+    <ImageView
+        android:id="@+id/wom"
+        android:layout_width="128dp"
+        android:layout_height="107dp"
+        android:layout_below="@+id/hello"
+        android:layout_alignEnd="@+id/hello"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="-25dp"
+        android:src="@drawable/wom" />
+
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wom"
+        android:layout_alignStart="@+id/wom"
+        android:layout_alignEnd="@+id/wom"
+        android:textAppearance="@style/WelcomeHeadTextLess"
+        android:text="@string/female"
+        android:textAlignment="center" />
+
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="250dp"
+        android:layout_height="57dp"
+        android:layout_below="@+id/tv_female"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/welcome_button"
+        android:text="@string/next"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWelcomeBackground"
+        android:textSize="21sp" />
+
+</RelativeLayout>

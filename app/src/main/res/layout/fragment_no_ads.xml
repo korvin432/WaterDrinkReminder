@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/colorText"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/image_ads"
+        android:layout_width="246dp"
+        android:layout_height="240dp"
+        android:src="@drawable/no_ads_back"
+        android:layout_marginTop="80dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_ads"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_ads"
+        android:textColor="@color/colorTextDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ni"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/n"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_notifications"
+        android:textColor="@color/colorTextDark"
+        android:layout_marginTop="5dp"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/nik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ni"
+        android:layout_centerHorizontal="true"
+        android:text="@string/no_pop"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorTextDark"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/button_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/button_close"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_blue"
+        android:layout_marginBottom="5dp"
+        android:text="@string/change_version"
+        android:textAllCaps="false"
+        android:textColor="@color/colorText"
+        android:textSize="22sp" />
+
+
+    <Button
+        android:id="@+id/button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_white"
+        android:text="@string/keep_using"
+        android:textAllCaps="false"
+        android:textSize="12sp" />
+
+
+    <ImageView
+        android:id="@+id/bottom_ads"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/no_ads_bottom" />
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="300dp"
+    android:padding="20dp"
+    android:background="@drawable/dialog_bg">
+        <TextView
+            android:id="@+id/choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/select_value"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+
+    <com.wx.wheelview.widget.WheelView
+        android:id="@+id/volumeWheel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+        <Button
+            android:id="@+id/applyVolume"
+            android:layout_width="240dp"
+            android:layout_height="47dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/welcome_button"
+            android:text="@string/add"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWelcomeBackground"
+            android:textSize="21sp" />
+
+
+
+</RelativeLayout>

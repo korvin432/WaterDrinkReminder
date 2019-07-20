@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTransparent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="50dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="50dp">
+
+            <TextView
+                android:id="@+id/congrats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/congratulations"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDark"
+                android:textSize="34sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/you_achieved"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/congrats"
+                android:layout_centerHorizontal="true"
+                android:text="@string/you_achieved"
+                android:textAlignment="center"
+                android:textColor="@color/colorTextDark"
+                android:textSize="19sp" />
+
+            <ImageView
+                android:layout_width="197dp"
+                android:layout_height="212dp"
+                android:layout_below="@+id/you_achieved"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/goal_achieved" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <Button
+        android:id="@+id/btnCont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/card"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_continue" />
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#06C4F3</color>
+    <color name="colorPrimaryDark">#06C4F3</color>
+    <color name="colorButton">#0AC6FD</color>
+    <color name="colorCircle">#06BBDB</color>
+    <color name="colorAccent">#2787DF</color>
+    <color name="colorWelcomeBackground">#06C4F3</color>
+    <color name="colorText">#ffffff</color>
+    <color name="colorWhiteTrans">#D2FFFFFF</color>
+    <color name="colorWhiteSuperTrans">#5EFFFFFF</color>
+    <color name="colorCardBackground">#0AC6FD</color>
+    <color name="colorTextDark">#00517A</color>
+    <color name="colorTextDarkLight">#C100517A</color>
+    <color name="colorTransparentText">#B9FFFFFF</color>
+    <color name="colorTransparentWhite">#E6F6FC</color>
+    <color name="colorTransparent">#00FFFFFF</color>
+    <color name="colorTransparentDark">#8B000000</color>
+    <color name="colorBarChart1">#2787DF</color>
+    <color name="colorBarChart2">#56CCF2</color>
+    <color name="colorBarChartBack">#F9F9F9</color>
+    <color name="colorTextSettings">#8F9090</color>
+    <color name="colorTextSettingsLight">#2787DF</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextGrey">#D54B4B4B</color>
+</resources>

@@ -1,0 +1,125 @@
+<resources>
+    <string name="app_name">Водохлёб</string>
+    <string name="next">Продолжить</string>
+    <string name="back">Назад</string>
+    <string name="start">Начать</string>
+    <string name="welcome">Приветствуем</string>
+    <string name="welcome_info">Для построения Вашего индивидуального плана потребления воды, нам необходимы данные, которые мы сохраним в секрете.</string>
+    <string name="choose_your_gender">Выберите ваш пол</string>
+    <string name="male">Мужской</string>
+    <string name="female">Женский</string>
+    <string name="your_weight">Ваш вес</string>
+    <string name="physical_activity">Физическая активность</string>
+    <string name="which_time_you_wake_up">В какое время Вы обычно просыпаетесь?</string>
+    <string name="which_time_you_go_sleep">В какое время Вы обычно ложитесь спать?</string>
+    <string name="drank">Выпито</string>
+    <string name="for_today">за сегодня</string>
+    <string name="add">Добавить</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="you_achieved">Вы достигли цели на сегодня, продолжайте в томже духе!!</string>
+    <string name="frequency">Частота питья воды</string>
+    <string name="month_average">Средне за месяц</string>
+    <string name="average_week">Средне за неделю</string>
+    <string name="ml">ml</string>
+    <string name="pn">пн</string>
+    <string name="vt">вт</string>
+    <string name="sr">ср</string>
+    <string name="cht">чт</string>
+    <string name="pt">пт</string>
+    <string name="sb">сб</string>
+    <string name="vs">вс</string>
+    <string name="reminders">Напоминания</string>
+    <string name="re">Режим напоминания</string>
+    <string name="inter">Интервал напоминания</string>
+    <string name="sd">Сдвигать расписание</string>
+    <string name="с">Продолжить напоминания</string>
+    <string name="v">Выдача напоминаний</string>
+    <string name="zv">Звук напоминания</string>
+    <string name="main">Основные</string>
+    <string name="time_format">Формат времени</string>
+    <string name="edizm">Единица измерения</string>
+    <string name="lang">Язык интерфейса</string>
+    <string name="pers">Персональные</string>
+    <string name="gender">Пол</string>
+    <string name="mass">Масса</string>
+    <string name="fiz_act">Физическая активность</string>
+    <string name="wakeup">Время пробуждения</string>
+    <string name="sleeptime">Время сна</string>
+    <string name="value">Объем жидкости</string>
+    <string name="other">Прочие</string>
+    <string name="off_ad">Отключить рекламу</string>
+    <string name="polit">Политика конфиденциальности</string>
+    <string name="polz">Пользовательское соглашение</string>
+    <string name="clouds">clouds</string>
+    <string name="time_to_drink">Настало время пить воду</string>
+    <string name="alarm">будильник</string>
+    <string name="do_you_like">Вам нравится наше приложение?</string>
+    <string name="if_you_like">Если вам нравится наше приложение, оцените нас на 5 звезд</string>
+    <string name="later">Позже</string>
+    <string name="its_time">Пришло время выпить воды</string>
+    <string name="dont_forget">Не забывайте пить воду, вода очень нужна вашему организму</string>
+    <string name="notifications_v_description">Выдает напоминания при разблокировке экрана</string>
+    <string name="change_version">0.9$ сменить версию</string>
+    <string name="keep_using">Продолжить использовать версию с рекламой</string>
+    <string name="no_ads">Никакой рекламы</string>
+    <string name="no_notifications">Никаких уведомлений с рекламой</string>
+    <string name="no_pop">Никакой всплывающей рекламы</string>
+    <string name="notifications_c_description">Выдача напоминаний после достижения цели</string>
+    <string name="next_water">следующий прием воды</string>
+    <string name="terms_of_service">Terms of Service\n\nThese Terms of Service are effective on Apr 1, 2019.\n\nDrink Water Reminder IS AN APP DEVELOPED BY HEALTHY WATER.\nBy using the services provided by Drink Water Reminder, you agree to the following terms and conditions, and that you have read and fully understood the Terms of Service in this agreement in its entirety.\n1. Accepting the Terms of Service\n• IF YOU DO NOT ACCEPT ALL THE TERMS OF SERVICE FOR Drink Water Reminder, IMMEDIATELY DISCONTINUE USE OF THIS APP. BY CONTINUING TO USE THIS APP, YOU AGREE TO ALL TERMS AND CONDITIONS IN THIS AGREEMENT.\n2. Service\n• You agree not to send pornography, violent, blooding, insulting, infringing, illegal or otherwise inappropriate content. What constitutes the above continent will be at the sole discretion of the developers of Drink Water Reminder.\n• By using this app you are accepting this agreement and privacy policy.\n• You can not use the information gained from our app or users in an illegal or malicious way.\n• You can not limit, or try to limit, the rights of other users to use our service. It is prohibited to encourage or give aid to others using this app in a way that is inconsistent with the terms of this agreement.\n\n• If Drink Water Reminder determines a user is using this app in a way that is inconsistent with the Terms of Service, intentionally or unintentionally, Drink Water Reminder has the right to end service to that user and take legal action to protect the rights of Drink Water Reminder and its users if appropriate.\n3. Copyright\nYou shall not copy any text or images used in Drink Water Reminder app without the written consent of a Drink Water Reminder representative. Doing so may constitute infringement and put you at legal risk.\n4. Change of Terms\nThis Terms of Service is subject to change at any time. Notices of any changes will be considered given and effective on the date posted on our app. The changes made will become effective the date they are posted. No further notice by Drink Water Reminder is required upon your continued use of our app or software.</string>
+    <string name="privacy_policy"> Privacy Policy\n Healthy Water built the Drink Water Remainder app as a Free app. This SERVICE is provided by Healthy Water at no cost and is intended for use as is. \n This page is used to inform visitors regarding my policies with the collection, use, and disclosure of Personal Information if anyone decided to use my Service. \n If you choose to use my Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that I collect is used for providing and improving the Service. I will not use or share your information with anyone except as described in this Privacy Policy. \n The terms used in this Privacy Policy have the same meanings as in our Terms and Conditions, which is accessible at Drink Water Remainder unless otherwise defined in this Privacy Policy. \n Information Collection and Use\n For a better experience, while using our Service, I may require you to provide us with certain personally identifiable information. The information that I request will be retained on your device and is not collected by me in any way. \n The app does use third party services that may collect information used to identify you. \n Link to privacy policy of third party service providers used by the app \n •	Google Play Services\n •	AdMob\n •	Yandex.Metrica\nLog Data\n I want to inform you that whenever you use my Service, in a case of an error in the app I collect data and information (through third party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing my Service, the time and date of your use of the Service, and other statistics. \n Cookies\n Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device\'s internal memory. \n This Service does not use these “cookies” explicitly. However, the app may use third party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device. If you choose to refuse our cookies, you may not be able to use some portions of this Service. \n Service Providers\n I may employ third-party companies and individuals due to the following reasons: \n •	To facilitate our Service; \n •	To provide the Service on our behalf; \n •	To perform Service-related services; or\n •	To assist us in analyzing how our Service is used. \n I want to inform users of this Service that these third parties have access to your Personal Information. The reason is to perform the tasks assigned to them on our behalf. However, they are obligated not to disclose or use the information for any other purpose. \n Security\n I value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and I cannot \n guarantee its absolute security. \n Links to Other Sites\n This Service may contain links to other sites. If you click on a third-party link, you will be directed to that site. Note that these external sites are not operated by me. Therefore, I strongly advise you to review the Privacy Policy of these websites. I have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services. \n Children’s Privacy\n These Services do not address anyone under the age of 13. I do not knowingly collect personally identifiable information from children under 13. In the case I discover that a child under 13 has provided me with personal information, I immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact me so that I will be able to do necessary actions. \n Changes to This Privacy Policy\n I may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. I will notify you of any changes by posting the new Privacy Policy on this page. These changes are effective immediately after they are posted on this page. \n Contact Us\n If you have any questions or suggestions about my Privacy Policy, do not hesitate to contact me at drinkwaterremainder@gmail.com.</string>
+    <string name="report">Отчет о потреблении воды</string>
+    <string name="year">год</string>
+    <string name="drink_water">Выпить воды</string>
+    <string name="thirty_minutes">30 минут</string>
+    <string name="hour">часа</string>
+    <string name="mal">Муж.</string>
+    <string name="fem">Жен.</string>
+    <string name="select_interval">Выберите интервал</string>
+    <string name="select_time">Выберите время</string>
+    <string name="times">раз</string>
+    <string name="low">Низкая</string>
+    <string name="sitting_lifestyle">Сидячий образ жизни без физической активности</string>
+    <string name="auto">авто</string>
+    <string name="russian">русский</string>
+    <string name="english">english</string>
+    <string name="middle">средняя</string>
+    <string name="month">месяц /</string>
+    <string name="day">\\день</string>
+    <string name="select_value">Выберите объем</string>
+    <string name="select_weight">Выберите вес</string>
+
+    <string-array name="advices">
+        <item>Интересный факт, что вода в вашем стакане упала с небес еще неделю назад, но повидала динозавров и зарождение живого на земле.</item>
+        <item>А Вы знали о том, что человек на 80% состоит из воды, рыбы – на 75%, медузы – на 99%, картофель - на 76%, яблоки - на 85%, помидоры - на 90%</item>
+        <item>Испарившаяся молекула воды проведет в воздухе около 10 дней, прежде чем упасть с неба в виде осадков и заново повторить цикл.</item>
+        <item>Выпитый стакан воды до приема пищи, притупляет чувство голода и наполняет желудок, что способствует уменьшению аппетита как минимум вдвое.</item>
+        <item>Горячая вода замерзает быстрее, чем холодная. Это явление называют Эффектом Мпембы, но никто не знает, почему так происходит.</item>
+        <item>Человек за один год потребляет около 60 тонн воды только в процессе питания.</item>
+        <item>Около 80% поверхности Земли покрыто водой и всего лишь 1% этой воды подходит для питья.</item>
+        <item>Повышение употребления воды (от 65% до 85%) продлевает человеку жизнь примерно на 15–20 лет, стимулирует регенерацию тканей и всех функциональных процессов.</item>
+        <item>Вода прозрачна лишь для видимых лучей и сильно поглощает инфракрасную радиацию.</item>
+        <item>За всю свою жизнь человек выпивает примерно 35 т воды. После кислорода вода – самое необходимое вещество.</item>
+        <item>Достаточно снизить на 2% содержание воды в организме, как умственные и физические показатели человека падают на 20%</item>
+        <item>Интересным фактом о воде является также то, что она способна запоминать информацию.</item>
+    </string-array>
+
+    <string-array name="activity_levels">
+        <item>Низкая</item>
+        <item>Умеренная</item>
+        <item>Высокая</item>
+    </string-array>
+
+    <string-array name="activities_description">
+        <item>Сидячий образ жизни без физической активности</item>
+        <item>Постоянно в движении нерегулярные тренировки</item>
+        <item>Постоянные тренировки 100% отдачи спорту</item>
+    </string-array>
+
+    <string-array name="notification_types">
+        <item>авто</item>
+        <item>без звука</item>
+        <item>выкл</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/reminders"
+            android:textColor="@color/colorTextSettings"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/notifications_interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/notifications_intervals"
+            android:text="@string/inter"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/notifications_intervals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/thirty_minutes"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/notifications_r"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_interval"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/notifications_type"
+            android:text="@string/re"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/notifications_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_interval"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/auto"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/notifications_z"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_r"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/notification_sound"
+            android:text="@string/zv"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/notification_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_r"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/alarm"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/notifications_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_z"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/v"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/notifications_v_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_v"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/notifications_v_description"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="12sp"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/question_v"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_z"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/notifications_v"
+            android:src="@drawable/question" />
+
+
+        <Switch
+            android:id="@+id/notification_show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_z"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/notifications_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_v_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/с"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/notifications_c_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_c"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/notifications_c_description"
+            android:textColor="@color/colorTextGrey"
+            android:textSize="12sp"
+            tools:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/question_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_v_description"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_toEndOf="@id/notifications_c"
+            android:src="@drawable/question" />
+
+        <Switch
+            android:id="@+id/notification_keep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_v_description"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp" />
+
+        <TextView
+            android:id="@+id/notifications_sd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_c_description"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@id/notification_shift"
+            android:text="@string/sd"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <Switch
+            android:id="@+id/notification_shift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications_c_description"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp" />
+
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/notifications_sd"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/main"
+            android:textColor="@color/colorTextSettings"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/time_format"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@id/time_formats"
+            android:text="@string/time_format"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/time_formats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/main"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="24"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_format"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@id/time_eds"
+            android:text="@string/edizm"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/time_eds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_format"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="ml, kg"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/lang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_ed"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@id/langs"
+            android:text="@string/lang"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/langs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_ed"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/russian"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+
+        <View
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/lang"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:id="@+id/personal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v2"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/pers"
+            android:textColor="@color/colorTextSettings"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/gend"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@id/gends"
+            android:text="@string/gender"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/gends"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/personal"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/mal"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/mass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gend"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/masss"
+            android:text="@string/mass"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/masss"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gend"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="65 kg"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/fiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mass"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/fizs"
+            android:text="@string/fiz_act"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/fizs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mass"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="@string/middle"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time_wakeup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fiz"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/time_wakeups"
+            android:text="@string/wakeup"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/time_wakeups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fiz"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="08:00"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/time_sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_wakeup"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/time_sleeps"
+            android:text="@string/sleeptime"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/time_sleeps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_wakeup"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="18:00"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/valu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_sleep"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_toStartOf="@+id/values"
+            android:text="@string/value"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/values"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/time_sleep"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:text="1800 ml"
+            android:textColor="@color/colorTextSettingsLight"
+            android:textSize="18sp" />
+
+
+
+        <View
+            android:id="@+id/v3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/values"
+            android:background="?android:attr/listDivider" />
+
+
+        <TextView
+            android:id="@+id/pr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/v3"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/other"
+            android:textColor="@color/colorTextSettings"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/offad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pr"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/off_ad"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/privacy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/offad"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/polit"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/terms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/privacy"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/polz"
+            android:textColor="@color/colorTextDark"
+            android:textSize="20sp" />
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:alpha="0.15"
+            android:scaleType="centerCrop"
+            android:src="@drawable/back_settings"
+            android:contentDescription="@string/clouds"/>
+
+    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>

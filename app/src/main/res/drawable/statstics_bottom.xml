@@ -1,0 +1,89 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="471"
+    android:viewportHeight="293"
+    android:width="471dp"
+    android:height="293dp">
+    <path
+        android:pathData="M471 137.465C563.359 123.494 623 101.385 623 76.5C623 34.2502 451.077 0 239 0C26.9227 0 -145 34.2502 -145 76.5C-145 100.75 -88.3613 122.365 0 136.381V296H471V137.465Z"
+        android:fillType="evenOdd">
+        <aapt:attr
+            name="android:fillColor">
+            <gradient
+                android:startX="239"
+                android:startY="-37"
+                android:endX="239"
+                android:endY="578.5"
+                android:tileMode="clamp">
+                <item
+                    android:color="#26B6FD"
+                    android:offset="0" />
+                <item
+                    android:color="#00517A"
+                    android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <group
+        android:rotation="-180"
+        android:pivotX="461"
+        android:pivotY="265">
+        <path
+            android:pathData="M659 265A198 198 0 0 1 263 265A198 198 0 0 1 659 265Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.24" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="178"
+        android:pivotY="176">
+        <path
+            android:pathData="M227 176A49 49 0 0 1 129 176A49 49 0 0 1 227 176Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.16" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="390"
+        android:pivotY="185">
+        <path
+            android:pathData="M419 185A29 29 0 0 1 361 185A29 29 0 0 1 419 185Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="39"
+        android:pivotY="142">
+        <path
+            android:pathData="M68 142A29 29 0 0 1 10 142A29 29 0 0 1 68 142Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="410.5"
+        android:pivotY="141.5">
+        <path
+            android:pathData="M454 141.5A43.5 43.5 0 0 1 367 141.5A43.5 43.5 0 0 1 454 141.5Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="237"
+        android:pivotY="361">
+        <path
+            android:pathData="M435 361A198 198 0 0 1 39 361A198 198 0 0 1 435 361Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.16" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="10"
+        android:pivotY="361">
+        <path
+            android:pathData="M208 361A198 198 0 0 1 -188 361A198 198 0 0 1 208 361Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.16" />
+    </group>
+</vector>

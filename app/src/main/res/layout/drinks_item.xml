@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="30dp"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:layout_marginTop="8dp"
+    android:background="@color/colorTransparent">
+
+    <ImageView
+        android:id="@+id/drink_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/ic_500"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/drink_time"
+        android:layout_width="231dp"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="2dp"
+        android:layout_toStartOf="@+id/drink_volume"
+        android:layout_toEndOf="@+id/drink_image"
+        android:gravity="start|center"
+        android:text="12:30"
+        android:textAlignment="viewStart"
+        android:textColor="@color/colorText"
+        android:textSize="19sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/drink_volume"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/image_settings"
+        android:gravity="center"
+        android:text="500 ml"
+        android:textAlignment="center"
+        android:textColor="@color/colorText" />
+
+    <TextView
+        android:id="@+id/itemId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/itemDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/image_settings"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@id/image_delete"
+        android:src="@drawable/ic_settings"/>
+
+
+    <ImageView
+        android:id="@+id/image_delete"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/ic_delete"/>
+
+</RelativeLayout>

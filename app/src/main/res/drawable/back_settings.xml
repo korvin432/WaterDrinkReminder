@@ -1,0 +1,66 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:aapt="http://schemas.android.com/aapt"
+    android:viewportWidth="471"
+    android:viewportHeight="196"
+    android:width="471dp"
+    android:height="196dp">
+    <group
+        android:rotation="-180"
+        android:pivotX="451"
+        android:pivotY="198">
+        <path
+            android:pathData="M649 198A198 198 0 0 1 253 198A198 198 0 0 1 649 198Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.6" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="168"
+        android:pivotY="109">
+        <path
+            android:pathData="M217 109A49 49 0 0 1 119 109A49 49 0 0 1 217 109Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="380"
+        android:pivotY="118">
+        <path
+            android:pathData="M409 118A29 29 0 0 1 351 118A29 29 0 0 1 409 118Z"
+            android:fillColor="#63DAFD" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="29"
+        android:pivotY="74.9999">
+        <path
+            android:pathData="M58 74.9999A29 29 0 0 1 0 74.9999A29 29 0 0 1 58 74.9999Z"
+            android:fillColor="#63DAFD" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="400.5"
+        android:pivotY="74.5">
+        <path
+            android:pathData="M444 74.5A43.5 43.5 0 0 1 357 74.5A43.5 43.5 0 0 1 444 74.5Z"
+            android:fillColor="#63DAFD" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="227"
+        android:pivotY="294">
+        <path
+            android:pathData="M425 294A198 198 0 0 1 29 294A198 198 0 0 1 425 294Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+    <group
+        android:rotation="-180"
+        android:pivotX="0.0000173097"
+        android:pivotY="294">
+        <path
+            android:pathData="M198 294A198 198 0 0 1 -198 294A198 198 0 0 1 198 294Z"
+            android:fillColor="#63DAFD"
+            android:fillAlpha="0.4" />
+    </group>
+</vector>
