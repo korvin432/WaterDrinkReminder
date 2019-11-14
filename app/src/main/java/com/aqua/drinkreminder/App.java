@@ -8,6 +8,8 @@ import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
 
+import com.aqua.drinkreminder.di.AppComponent;
+import com.aqua.drinkreminder.di.DaggerAppComponent;
 import com.yandex.metrica.YandexMetrica;
 import com.yandex.metrica.YandexMetricaConfig;
 
@@ -15,19 +17,28 @@ import java.util.Locale;
 
 public class App extends Application {
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        // Creating an extended library configuration.
-        YandexMetricaConfig config = YandexMetricaConfig.
-                newConfigBuilder("9b0e0c8f-eeec-4181-b4a4-30793719bd9e").build();
-        // Initializing the AppMetrica SDK.
-        YandexMetrica.activate(getApplicationContext(), config);
-        // Automatic tracking of user activity.
-        YandexMetrica.enableActivityAutoTracking(this);
+    private static AppComponent component;
+
+    public static AppComponent getComponent(){
+        return component;
     }
 
     @Override
+    public void onCreate() {
+        super.onCreate();
+        YandexMetricaConfig config = YandexMetricaConfig.
+                newConfigBuilder("9b0e0c8f-eeec-4181-b4a4-30793719bd9e").build();
+        YandexMetrica.activate(getApplicationContext(), config);
+        YandexMetrica.enableActivityAutoTracking(this);
+        component = buildComponent();
+    }
+
+    protected AppComponent buildComponent() {
+        return DaggerAppComponent.builder()
+                .build();
+    }
+
+        @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(updateBaseContextLocale(base));
     }
