@@ -17,7 +17,9 @@ import android.widget.ImageView;
 
 import com.aqua.drinkreminder.di.AppComponent;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import dagger.android.support.DaggerAppCompatActivity;
+
+public class MainActivity extends DaggerAppCompatActivity implements View.OnClickListener {
 
     private ImageView barImage;
     private Button btnMain;
@@ -38,7 +40,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        App.getComponent().inject(this);
 
         FragmentMain fragment = FragmentMain.newInstance();
         getSupportFragmentManager().beginTransaction().replace(R.id.container, fragment)

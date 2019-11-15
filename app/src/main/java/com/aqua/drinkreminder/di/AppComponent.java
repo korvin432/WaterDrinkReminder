@@ -3,16 +3,27 @@ package com.aqua.drinkreminder.di;
 import android.app.Application;
 
 import com.aqua.drinkreminder.App;
-import com.aqua.drinkreminder.MainActivity;
 
 import javax.inject.Singleton;
 
 import dagger.BindsInstance;
 import dagger.Component;
+import dagger.android.AndroidInjector;
+import dagger.android.support.AndroidSupportInjectionModule;
 
 @Singleton
-@Component
-public interface AppComponent {
+@Component(modules = {
+        AndroidSupportInjectionModule.class,
+        ActivityBuildersModule.class
+})
+public interface AppComponent extends AndroidInjector<App> {
 
-    void inject(MainActivity mainActivity);
+    void inject(App app);
+
+    @Component.Builder
+    interface Builder {
+        @BindsInstance
+        Builder application(Application application);
+        AppComponent build();
+    }
 }

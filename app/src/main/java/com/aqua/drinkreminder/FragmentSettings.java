@@ -31,7 +31,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
 
-public class FragmentSettings extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
+import javax.inject.Inject;
+
+import dagger.android.support.DaggerFragment;
+
+public class FragmentSettings extends DaggerFragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 
     private TextView tvGender;
     private TextView tvActivity;
@@ -70,7 +74,8 @@ public class FragmentSettings extends Fragment implements View.OnClickListener, 
     private String sleepTime;
     private boolean is24format;
 
-    private DBHelper dbHelper;
+    @Inject
+    DBHelper dbHelper;
 
     public static FragmentSettings newInstance() {
         return new FragmentSettings();
@@ -80,9 +85,6 @@ public class FragmentSettings extends Fragment implements View.OnClickListener, 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_settings, container, false);
-
-
-        dbHelper = new DBHelper(getContext());
 
         isMale = PreferenceManager.getDefaultSharedPreferences(getContext())
                 .getBoolean("isMale", true);
@@ -94,9 +96,7 @@ public class FragmentSettings extends Fragment implements View.OnClickListener, 
             tvGender.setText(getContext().getResources().getString(R.string.fem));
         }
 
-
         currentVolume = PreferenceManager.getDefaultSharedPreferences(getContext()).getInt("currentVolume", 0);
-
         physicalActivity = PreferenceManager.getDefaultSharedPreferences(getContext())
                 .getInt("physicalActivity", 1);
         tvActivity = rootView.findViewById(R.id.fizs);

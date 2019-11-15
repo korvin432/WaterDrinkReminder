@@ -3,6 +3,7 @@ package com.aqua.drinkreminder;
 import android.app.AlarmManager;
 import android.app.Dialog;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
@@ -40,6 +41,7 @@ import com.google.android.gms.ads.InterstitialAd;
 import com.google.android.gms.ads.MobileAds;
 import com.wx.wheelview.adapter.ArrayWheelAdapter;
 import com.wx.wheelview.widget.WheelView;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -48,9 +50,11 @@ import java.util.Date;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-import static com.aqua.drinkreminder.DBHelper.TAG;
+import javax.inject.Inject;
 
-public class FragmentMain extends Fragment implements View.OnClickListener {
+import dagger.android.support.DaggerFragment;
+
+public class FragmentMain extends DaggerFragment implements View.OnClickListener {
 
     private View bottom;
     private View bottomClicked;
@@ -76,7 +80,9 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     private boolean isMetrics;
 
     private DrinksAdapter mAdapter;
+    @Inject
     SQLiteDatabase mDatabase;
+    @Inject
     DBHelper dbHelper;
     private RecyclerView recyclerView;
     private InterstitialAd mInterstitialAd;
@@ -84,6 +90,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     public static FragmentMain newInstance() {
         return new FragmentMain();
     }
+
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -101,7 +108,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         CardView adviceCard = rootView.findViewById(R.id.advice_card);
         MobileAds.initialize(getContext(), "ca-app-pub-3940256099942544~3347511713");
 
-        if((launchesCount & 1) != 0){
+        if ((launchesCount & 1) != 0) {
             AdView adView = new AdView(getContext());
             adView.setAdSize(AdSize.BANNER);
             adView.setAdUnitId("ca-app-pub-3940256099942544/6300978111");
@@ -121,9 +128,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         final Animation fadeOut = AnimationUtils.loadAnimation(getContext(), R.anim.fade_out);
         final Animation slideIn = AnimationUtils.loadAnimation(getContext(), R.anim.slide_in_bottom);
         final Animation slideOut = AnimationUtils.loadAnimation(getContext(), R.anim.slide_out_bottom);
-        dbHelper = new DBHelper(getContext());
 
-        mDatabase = dbHelper.getWritableDatabase();
         tvAdvice = rootView.findViewById(R.id.advice_text);
         updateAdvice();
         checkNewDay();
@@ -149,7 +154,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         mAdapter = new DrinksAdapter(getContext(), getAllItems(), new DrinksAdapter.ClickListener() {
             @Override
             public void onPositionClicked(int position, int firstVolume, String date, boolean isDelete) {
-                if(!isDelete) {
+                if (!isDelete) {
                     updateDrink(position, firstVolume, date);
                 } else {
                     deleteDrink(position, date, firstVolume);
@@ -229,7 +234,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
 
         nextTimeLayout = rootView.findViewById(R.id.next_layout);
 
-        if (!isMetrics){
+        if (!isMetrics) {
             TextView tvNext = nextTimeLayout.findViewById(R.id.drink_volume);
             tvNext.setText("100 fl");
         }
@@ -314,7 +319,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         return rootView;
     }
 
-    private void deleteDrink(int position, String date, final int volume){
+    private void deleteDrink(int position, String date, final int volume) {
         dbHelper.deleteDrink(position, date);
         currentVolume = currentVolume - volume;
         SharedPreferences.Editor editor = PreferenceManager.getDefaultSharedPreferences(getContext()).edit();
@@ -324,7 +329,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         mAdapter = new DrinksAdapter(getContext(), getAllItems(), new DrinksAdapter.ClickListener() {
             @Override
             public void onPositionClicked(int position, int firstVolume, String date, boolean isDelete) {
-                if(!isDelete) {
+                if (!isDelete) {
                     updateDrink(position, firstVolume, date);
                 } else {
                     deleteDrink(position, date, volume);
@@ -363,8 +368,8 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
         Date date = new Date(finalTime + alarmTime);
 
         DateFormat formatter;
-        if(is24format) {
-             formatter = new SimpleDateFormat("HH:mm",
+        if (is24format) {
+            formatter = new SimpleDateFormat("HH:mm",
                     ConfigurationCompat.getLocales(getResources().getConfiguration()).get(0));
         } else {
             formatter = new SimpleDateFormat("hh:mm",
@@ -505,7 +510,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
                 mAdapter = new DrinksAdapter(getContext(), getAllItems(), new DrinksAdapter.ClickListener() {
                     @Override
                     public void onPositionClicked(int position, int firstVolume, String date, boolean isDelete) {
-                        if(!isDelete) {
+                        if (!isDelete) {
                             updateDrink(position, firstVolume, date);
                         } else {
                             deleteDrink(position, date, firstVolume);
@@ -630,7 +635,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
     private void addDrink(final int volume) {
         PreferenceManager.getDefaultSharedPreferences(getContext()).edit().putInt("interstitialCounter", interstitialCounter + 1).apply();
         interstitialCounter += 1;
-        if (interstitialCounter >= 3){
+        if (interstitialCounter >= 3) {
             if (mInterstitialAd.isLoaded()) {
                 mInterstitialAd.show();
             }
@@ -724,7 +729,7 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
             mAdapter = new DrinksAdapter(getContext(), getAllItems(), new DrinksAdapter.ClickListener() {
                 @Override
                 public void onPositionClicked(int position, int firstVolume, String date, boolean isDelete) {
-                    if(!isDelete) {
+                    if (!isDelete) {
                         updateDrink(position, firstVolume, date);
                     } else {
                         deleteDrink(position, date, firstVolume);
@@ -791,7 +796,6 @@ public class FragmentMain extends Fragment implements View.OnClickListener {
             bar.setProgress(vol);
         }
     };
-
 
 
     @Override

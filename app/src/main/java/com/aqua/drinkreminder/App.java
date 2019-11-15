@@ -1,27 +1,32 @@
 package com.aqua.drinkreminder;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
 import android.app.Application;
+import android.app.Fragment;
 import android.content.Context;
 import android.content.res.Configuration;
 import android.content.res.Resources;
 import android.os.Build;
 import android.preference.PreferenceManager;
-
+import android.support.multidex.MultiDexApplication;
 import com.aqua.drinkreminder.di.AppComponent;
 import com.aqua.drinkreminder.di.DaggerAppComponent;
 import com.yandex.metrica.YandexMetrica;
 import com.yandex.metrica.YandexMetricaConfig;
-
 import java.util.Locale;
+import javax.inject.Inject;
+import dagger.android.AndroidInjector;
+import dagger.android.DaggerApplication;
+import dagger.android.DispatchingAndroidInjector;
+import dagger.android.HasActivityInjector;
+import dagger.android.HasFragmentInjector;
 
-public class App extends Application {
+public class App extends MultiDexApplication implements HasActivityInjector, HasFragmentInjector {
 
-    private static AppComponent component;
-
-    public static AppComponent getComponent(){
-        return component;
-    }
+    @Inject DispatchingAndroidInjector<Activity> activityInjector;
+    @Inject DispatchingAndroidInjector<Fragment> fragmentInjector;
+    private AppComponent mComponent;
 
     @Override
     public void onCreate() {
@@ -30,15 +35,18 @@ public class App extends Application {
                 newConfigBuilder("9b0e0c8f-eeec-4181-b4a4-30793719bd9e").build();
         YandexMetrica.activate(getApplicationContext(), config);
         YandexMetrica.enableActivityAutoTracking(this);
-        component = buildComponent();
+        mComponent = DaggerAppComponent.builder().application(this).build();
+        mComponent.inject(this);
     }
 
-    protected AppComponent buildComponent() {
-        return DaggerAppComponent.builder()
-                .build();
+    // Dependency Injection
+    @Override
+    public DispatchingAndroidInjector<Activity> activityInjector() {
+        return activityInjector;
     }
 
-        @Override
+
+    @Override
     protected void attachBaseContext(Context base) {
         super.attachBaseContext(updateBaseContextLocale(base));
     }
@@ -70,5 +78,10 @@ public class App extends Application {
         configuration.locale = locale;
         resources.updateConfiguration(configuration, resources.getDisplayMetrics());
         return context;
+    }
+
+    @Override
+    public AndroidInjector<android.app.Fragment> fragmentInjector() {
+        return fragmentInjector;
     }
 }
